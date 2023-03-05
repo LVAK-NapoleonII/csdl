@@ -2,11 +2,12 @@
 
 using namespace std;
 
-struct phanso{
+struct PhanSo
+{
 	int mau;
 	int tu; 
 };
-void Nhap(phanso &ps){	
+void Nhap(PhanSo &ps){	
 		cout << "Nhap mau: "; 
 		cin >> ps.mau; 
 		cout << "Nhap tu: "; 
@@ -14,12 +15,12 @@ void Nhap(phanso &ps){
 	 } 
 	 
 
-void Xuat(phanso ps){
+void Xuat(PhanSo ps){
 		cout << "Mau la: " << ps.mau<<endln	;
 			cout << "Tu la: " << ps.tu<<endln ;
 	 } 
 int main(){	
-	phanso ps;
+	PhanSo ps;
 	Nhap(ps);
 	Xuat(ps); 
 }
